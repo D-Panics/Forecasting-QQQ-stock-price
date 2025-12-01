@@ -16,13 +16,13 @@ All processing, feature engineering, and modeling are implemented in a **single 
 ### Feature Engineering
 Examples of features created from options data:
 - Put–call volume ratios  
-- Implied volatility metrics (ATM IV, OTM skew, term structure)  
+- Implied volatility metrics (ATM IV, term structure)  
 - Realized vs implied volatility spreads  
 - Aggregated volume and open interest statistics  
 
 ### Modeling
 - Transforming daily features into next-day exposure predictions.  
-- Models tested: Random Forest, Ridge Regression, PCA-based approaches.  
+- Models tested: Ridge Regression, PCA-based approaches.  
 - Predicted exposure constrained to a custom range (e.g., –1.0 to +1.5).  
 - Train/validation split used for evaluation and robustness checks.
 
@@ -37,14 +37,13 @@ Examples of features created from options data:
 - Metrics are based on train/validation sets; results may differ on other data.  
 
 ### Reproducibility
-- A **small sample dataset** (`data/sample_options_data.csv`) is included for demonstration purposes.  
+- A **small sample dataset** (`sample_options_data.csv`) is included for demonstration purposes.  
 - Full results reflect the proprietary challenge data and cannot be reproduced publicly.
 
 ### Future Improvements
 - Add walk-forward validation and backtesting.  
 - Test additional models (XGBoost, LightGBM, CatBoost).  
 - Include macro and cross-asset features for richer predictions.  
-- Further optimize feature engineering to capture dealer positioning and market sentiment.
 
 ---
 
