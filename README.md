@@ -37,8 +37,8 @@ Examples of features created from options data:
 - Metrics are based on train/validation sets; results may differ on other data.  
 
 ### Reproducibility
-- A **small sample dataset** (`sample_options_data.csv`) is included for demonstration purposes.  
-- Full results reflect the proprietary challenge data and cannot be reproduced publicly.
+- Two **small sample datasets** (`sample_options_QQQ.csv`, `sample_options_SPY.csv`) are included for demonstration purposes.  
+- Full results reflect the proprietary data and cannot be reproduced publicly.
 
 ### Future Improvements
 - Add walk-forward validation and backtesting.  
